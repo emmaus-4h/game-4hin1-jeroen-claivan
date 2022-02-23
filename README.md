@@ -2,11 +2,11 @@ Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
 ## Mijn spel: *naam van het spel*
 Gemaakt door:
-- *naam van leerling 1*
-- *naam van leerling 2*
+- * Jeroen Schrave*
+- * Clai-Van Kartowwikromo*
 
 ### Beschrijving
-*korte beschrijving van het spel, wat je kunt doen in het spel, wat het doel is*
+*Trekt bal en weerkaatst tegen muren om zo naar de uitgang te komen.*
 
 ## Mijn planning
 Werk de planning af van boven naar beneden<br>
