@@ -15,30 +15,34 @@ Geef aan met [x] welke onderdelen af zijn
 ### Basisstappen
 Basis: uitleg, spelen, afgaan en punten
 - [x] 1. maak index.html, style.css en script.js met canvas
-- [ ] 2. teken speler
+- [ ] 2. teken speler=bal
         - Zet je code in de functie tekenAlles()
-- [ ] 3. beweeg speler
+- [ ] 3. beweeg speler=bal
         - Zet je code in de functie beweegAlles()
-        - Kies de afmeting van speler
-        - Gebruik variabalen spelerX en spelerY als middelpunt van de speler
-- [ ] 4. *(pas de volgende stappen in de planning zelf aan)*
-- [ ] x. teken je tegenspeler (vijanden of dingen die je moet pakken of doelen of ...)
-- [ ] x. teken een bal, kogel (als die in je spel zit)
-- [ ] x. beweeg de tegenspeler of je bal
-- [ ] x. zet punten op het scherm 
-- [ ] x. zorg dat je punten kunt scoren
-- [ ] x. zorg dat je af kunt
-- [ ] x. maak game-over-scherm
-- [ ] x. maak uitlegscherm
+        - Bal beweegt, snelheid van bewegen zet ik in variabelen snelheidX snelheidY
+        - Kaats tegen de randen van het scherm
+- [ ] 4. kies hoe de bal beweegt
+        - klik met de muis en bewaar waar de muis klikt in variabelen
+        - bereken snelheidX en snelheidY
+  [ ] 5. Maak uitgagng
+        - teken de uitgang iop het scherm
+        - detecteer als bal in uitgang is
+        - einde game als bal in uitgang
+  [ ] 6. Maak punten
+        - 1 minuut = 3000 punten
+        - druk dat af op het scherm
+        - haal er elke 1/50e seconde 1 punt af
+        - als je bij 0 bent dan game-over
+
 
 ### Uitbreidingen 1
-Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
+Uitbreiding: uitgang op willekeurige plek
 - [ ] *later uitwerken*
 - [ ] *later uitwerken*
 - [ ] *later uitwerken*
 
 ### Uitbreidingen 2
-Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
+Uitbreiding: obstakels
 - [ ] *later uitwerken*
 - [ ] *later uitwerken*
 - [ ] *later uitwerken*
