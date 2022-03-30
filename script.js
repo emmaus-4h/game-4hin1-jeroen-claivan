@@ -26,7 +26,7 @@ var spelerY = 360; // y-positie van speler
  */
 var beweegAlles = function () {
   // speler
-
+  
   // vijand
 
   // kogel
@@ -51,17 +51,28 @@ var verwerkBotsing = function () {
  */
 var tekenAlles = function () {
   // achtergrond
-
+  fill("black")
+  rect(20, 20, 30, 680) // Links
+  fill("black")
+  rect(20, 670, 900, 30) // Onder 1
+  fill("black")
+  rect(20, 20, 1240, 30) // Boven
+  fill("black")
+  rect(1230, 20, 30, 680)  // Rechts
+  fill("black")
+  rect(1175, 670, 55, 30) // Onder 2
+  
   // vijand
 
   // kogel
 
   // speler
   fill("white");
-  ellipse(spelerX, spelerY , 50, 50);
-  fill("black");
   ellipse(spelerX, spelerY , 30, 30);
-
+  fill("black");
+  ellipse(spelerX, spelerY , 20, 20);
+  fill("pink");
+  ellipse(spelerX, spelerY , 15, 15);
 
   // punten en health
 

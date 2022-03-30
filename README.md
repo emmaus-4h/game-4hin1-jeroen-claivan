@@ -1,6 +1,6 @@
 Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
-## Mijn spel: *naam van het spel*
+## Mijn spel: *Balls*
 Gemaakt door:
 - * Jeroen Schrave*
 - * Clai-Van Kartowwikromo*
