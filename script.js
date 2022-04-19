@@ -16,7 +16,8 @@ var spelStatus = SPELEN;
 
 var spelerX = 640; // x-positie van speler
 var spelerY = 360; // y-positie van speler
-
+var snelheidX = 10;
+var snelheidY = 10;
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
 /* ********************************************* */
@@ -27,7 +28,20 @@ var spelerY = 360; // y-positie van speler
 var beweegAlles = function () {
   // speler
   if (mouseIsPressed) {
-    spelerX = spelerX -1;
+    spelerX = spelerX - snelheidX;
+    spelerY = spelerY - snelheidY;
+  }
+  if (spelerX < 70) {
+    snelheidX = snelheidX * -1;
+  }
+  if (spelerX > 1210) {
+    snelheidX = snelheidX * -1;
+  }
+  if (spelerY < 70) {
+    snelheidY = snelheidY * -1;
+  }
+  if (spelerY > 650) {
+    snelheidY = snelheidY * -1;
   }
   // vijand
 
