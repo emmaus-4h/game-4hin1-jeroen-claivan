@@ -26,7 +26,9 @@ var spelerY = 360; // y-positie van speler
  */
 var beweegAlles = function () {
   // speler
-  
+  if (mouseIsPressed) {
+    spelerX = spelerX -1;
+  }
   // vijand
 
   // kogel
@@ -51,6 +53,8 @@ var verwerkBotsing = function () {
  */
 var tekenAlles = function () {
   // achtergrond
+  fill("pink")
+  rect(0,0,1280,720)
   fill("black")
   rect(20, 20, 30, 680) // Links
   fill("black")
