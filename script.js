@@ -16,8 +16,8 @@ var spelStatus = SPELEN;
 
 var spelerX = 640; // x-positie van speler
 var spelerY = 360; // y-positie van speler
-var snelheidX = 10;
-var snelheidY = 10;
+var snelheidX = 0;
+var snelheidY = 0;
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
 /* ********************************************* */
@@ -28,9 +28,12 @@ var snelheidY = 10;
 var beweegAlles = function () {
   // speler
   if (mouseIsPressed) {
+    snelheidX = 10
+    snelheidY = 10
+  }
     spelerX = spelerX - snelheidX;
     spelerY = spelerY - snelheidY;
-  }
+  
   if (spelerX < 70) {
     snelheidX = snelheidX * -1;
   }
@@ -44,7 +47,9 @@ var beweegAlles = function () {
     snelheidY = snelheidY * -1;
   }
   // vijand
-
+  if (spelerY > 649 === spelerX > 920 === spelerX < 1175) {
+    console.log("af");
+  }
   // kogel
 };
 
@@ -81,7 +86,9 @@ var tekenAlles = function () {
   rect(1175, 670, 55, 30) // Onder 2
   
   // vijand
-
+  fill("red")
+  rect(920, 670, 255, 30)
+  
   // kogel
 
   // speler
