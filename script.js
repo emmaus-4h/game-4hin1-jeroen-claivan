@@ -50,7 +50,7 @@ var beweegAlles = function () {
     snelheidY = snelheidY * -1;
   }
   // vijand
-  if (spelerY > 649 === spelerX > 920 === spelerX < 1175) {
+  if (spelerY > 649 && spelerX > 920 && spelerX < 1175) {
     console.log("af");
   }
   // kogel
@@ -63,7 +63,7 @@ var beweegAlles = function () {
  */
 var verwerkBotsing = function () {
   // botsing speler tegen vijand
- if spelerX === 
+ 
   // botsing kogel tegen vijand
 
   // update punten en health
@@ -90,7 +90,7 @@ var tekenAlles = function () {
   
   // vijand
   fill("red")
-  rect(920, 640, 255, 30)
+  rect(920, 670, 255, 30)
   
   // kogel
 
