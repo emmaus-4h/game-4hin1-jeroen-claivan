@@ -12,6 +12,7 @@
 
 const SPELEN = 1;
 const GAMEOVER = 2;
+const UITLEG = 8;
 var spelStatus = SPELEN;
 
 var spelerX = 640; // x-positie van speler
@@ -30,10 +31,11 @@ var vijandY = 640;
  */
 var beweegAlles = function () {
   // speler
-  if (mouseIsPressed) {
-    snelheidX = 10
-    snelheidY = 10
-  }
+     if (mouseIsPressed) {
+    snelheidX = -10
+    snelheidY = -10
+  } 
+  
     spelerX = spelerX - snelheidX;
     spelerY = spelerY - snelheidY;
   
@@ -50,9 +52,7 @@ var beweegAlles = function () {
     snelheidY = snelheidY * -1;
   }
   // vijand
-  if (spelerY > 649 && spelerX > 920 && spelerX < 1175) {
-    console.log("af");
-  }
+  
   // kogel
 };
 
@@ -111,6 +111,10 @@ var tekenAlles = function () {
  * anders return false
  */
 var checkGameOver = function () {
+  if (spelerY > 649 && spelerX > 920 && spelerX < 1175) {
+    console.log("af");
+    return true;
+  } 
   // check of HP 0 is , of tijd op is, of ...
   return false;
 };
@@ -145,9 +149,33 @@ function draw() {
     if (checkGameOver()) {
       spelStatus = GAMEOVER;
     }
+    console.log("spelen");
   }
   if (spelStatus === GAMEOVER) {
     // teken game-over scherm
-
+    console.log("game over");
+     textSize(100);
+    fill ("black");
+    text ("GG!!", 550, 350);
+    text ("druk spatie voor start", 200, 450);
+    if (keyIsDown(32)) { 
+     spelStatus = UITLEG;
+    }
+  }
+  if (spelStatus === UITLEG) {
+    // teken uitlegscherm
+    console.log("uitleg");
+     textSize(100);
+    fill ("white");
+    rect (0,0, 1280, 720);
+    fill ("black");
+    text ("Klik op enter om te starten", 70, 350);
+    if (keyIsDown(13)) { 
+      spelerX = 640;
+      spelerY = 320;
+     spelStatus = SPELEN;
+    }
+    
+     
   }
 }
