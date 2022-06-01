@@ -87,7 +87,8 @@ var tekenAlles = function () {
   rect(1230, 20, 30, 680)  // Rechts
   fill("black")
   rect(1175, 670, 55, 30) // Onder 2
-  
+  textSize(100);
+  text(frameCount, 100, 150);   
   // vijand
   fill("red")
   rect(920, 670, 255, 30)
@@ -129,6 +130,10 @@ var checkGameOver = function () {
  * de p5 library, zodra het spel geladen is in de browser
  */
 function setup() {
+  frameRate(30);
+  textSize(30);
+
+
   // Maak een canvas (rechthoek) waarin je je speelveld kunt tekenen
   createCanvas(1280, 720);
 
@@ -145,7 +150,7 @@ function draw() {
   if (spelStatus === SPELEN) {
     beweegAlles();
     verwerkBotsing();
-    tekenAlles();
+    tekenAlles();  
     if (checkGameOver()) {
       spelStatus = GAMEOVER;
     }
@@ -166,7 +171,7 @@ function draw() {
     // teken uitlegscherm
     console.log("uitleg");
      textSize(100);
-    fill ("white");
+    fill ("pink");
     rect (0,0, 1280, 720);
     fill ("black");
     text ("Klik op enter om te starten", 70, 350);
