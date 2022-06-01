@@ -130,8 +130,8 @@ var checkGameOver = function () {
  * de p5 library, zodra het spel geladen is in de browser
  */
 function setup() {
-  frameRate(30);
-  textSize(30);
+  frameRate(60);
+  textSize(60);
 
 
   // Maak een canvas (rechthoek) waarin je je speelveld kunt tekenen
