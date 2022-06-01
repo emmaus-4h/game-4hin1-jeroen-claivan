@@ -88,7 +88,7 @@ var tekenAlles = function () {
   fill("black")
   rect(1175, 670, 55, 30) // Onder 2
   textSize(100);
-  text(frameCount, 100, 150);   
+  text(frameCount / 50, 100, 150);   
   // vijand
   fill("red")
   rect(920, 670, 255, 30)
