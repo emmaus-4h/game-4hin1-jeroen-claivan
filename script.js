@@ -32,7 +32,7 @@ var vijandY = 640;
 var beweegAlles = function () {
   // speler
      if (mouseIsPressed) {
-    snelheidX = -10
+    snelheidX = -10 
     snelheidY = -10
   } 
   
@@ -130,7 +130,7 @@ var checkGameOver = function () {
  * de p5 library, zodra het spel geladen is in de browser
  */
 function setup() {
-  frameRate(60);
+  frameRate(50);
   textSize(60);
 
 
@@ -179,6 +179,7 @@ function draw() {
       spelerX = 640;
       spelerY = 320;
      spelStatus = SPELEN;
+     frameCount = 0;
     }
     
      
