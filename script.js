@@ -32,10 +32,11 @@ var vijandY = 640;
 var beweegAlles = function () {
   // speler
      if (mouseIsPressed) {
-    snelheidX = -10 
-    snelheidY = -10
+    snelheidX = mouseX - 640
+    snelheidY = mouseY - 360
+    snelheidX = snelheidX / 10
+    snelheidY = snelheidY / 10
   } 
-  
     spelerX = spelerX - snelheidX;
     spelerY = spelerY - snelheidY;
   
