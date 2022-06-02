@@ -34,8 +34,8 @@ var beweegAlles = function () {
      if (mouseIsPressed) {
     snelheidX = mouseX - 640
     snelheidY = mouseY - 360
-    snelheidX = snelheidX / 10
-    snelheidY = snelheidY / 10
+    snelheidX = snelheidX / 33
+    snelheidY = snelheidY / 33
   } 
     spelerX = spelerX - snelheidX;
     spelerY = spelerY - snelheidY;
