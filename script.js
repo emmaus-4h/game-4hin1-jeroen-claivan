@@ -178,7 +178,7 @@ function draw() {
     text ("Klik op enter om te starten", 70, 350);
     if (keyIsDown(13)) { 
       spelerX = 640;
-      spelerY = 320;
+      spelerY = 360;
      spelStatus = SPELEN;
      frameCount = 0;
     }

@@ -17,14 +17,14 @@ Basis: uitleg, spelen, afgaan en punten
 - [x] 1. maak index.html, style.css en script.js met canvas
 - [x]  2. teken speler=bal
         - Zet je code in de functie tekenAlles()
-- [ ] 3. beweeg speler=bal
+- [x] 3. beweeg speler=bal
         - Zet je code in de functie beweegAlles()
         - Bal beweegt, snelheid van bewegen zet ik in variabelen snelheidX snelheidY
         - Kaats tegen de randen van het scherm
-- [ ] 4. kies hoe de bal beweegt
+- [x] 4. kies hoe de bal beweegt
         - klik met de muis en bewaar waar de muis klikt in variabelen
         - bereken snelheidX en snelheidY
-  [ ] 5. Maak uitgagng
+  [x] 5. Maak uitgagng
         - teken de uitgang iop het scherm
         - detecteer als bal in uitgang is
         - einde game als bal in uitgang
