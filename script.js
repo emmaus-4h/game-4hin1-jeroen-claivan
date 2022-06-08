@@ -176,6 +176,8 @@ function draw() {
     rect (0,0, 1280, 720);
     fill ("black");
     text ("Klik op enter om te starten", 70, 350);
+    snelheidX = 0
+    snelheidY = 0
     if (keyIsDown(13)) { 
       spelerX = 640;
       spelerY = 360;
