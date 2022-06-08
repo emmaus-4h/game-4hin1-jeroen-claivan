@@ -93,6 +93,9 @@ var tekenAlles = function () {
   // vijand
   fill("red")
   rect(920, 670, 255, 30)
+
+  fill("red")
+  ellipse(250, 250, 100, 100)
   
   // kogel
 
