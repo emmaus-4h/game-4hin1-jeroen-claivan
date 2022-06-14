@@ -118,8 +118,10 @@ var tekenAlles = function () {
 var checkGameOver = function () {
   if (spelerY > 649 && spelerX > 920 && spelerX < 1175) {
     console.log("af");
-    return true;
-  } 
+    return true; }
+  if (spelerY > 200 && spelerY < 300 && spelerX > 200 && spelerX < 300 ) {
+    console.log("af");
+    return true;  } 
   // check of HP 0 is , of tijd op is, of ...
   return false;
 };
